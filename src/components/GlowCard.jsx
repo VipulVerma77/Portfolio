@@ -4,7 +4,7 @@ const GlowCard = ({ card, index, children }) => {
   // refs for all the cards
   const cardRefs = useRef([]);
 
-  // when mouse moves over a card, rotate the glow effect
+  
   const handleMouseMove = (index) => (e) => {
     // get the current card
     const card = cardRefs.current[index];
