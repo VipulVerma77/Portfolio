@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { TitleHeader } from "../components";
+import { socialImgs } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,7 +46,7 @@ const AppShowcase = () => {
   }, []);
 
   return (
-    <div id="work" ref={sectionRef} className="app-showcase">
+    <div id="work" ref={sectionRef} className="app-showcase flex-col">
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
@@ -59,6 +61,13 @@ const AppShowcase = () => {
               Implemented a clean, responsive UI with modular design, intuitive navigation, and reusable components by using React.js. 
               Backend is under development, current focus is on user interface and experience.
               </p>
+              <div className=" h-10  justify-between  flex ">
+          {socialImgs.map((socialImg, index) => (
+            <a key={index} className="icon" href={socialImg?.link} target="_blank">
+              <img src={socialImg.imgPath} style={{heigh:'30px',width:'30px'}} alt="social icon" />
+            </a>
+          ))}
+        </div>  
             </div>
           </div>
 
@@ -78,6 +87,13 @@ const AppShowcase = () => {
                 <img src="/images/project3.png" alt="YC Directory App" />
               </div>
               <h2>Ecomzy - Developed a responsive e-commerce website using React.js and Tailwind CSS for a modern design </h2>
+              <div className=" h-10  justify-between  flex ">
+          {socialImgs.map((socialImg, index) => (
+            <a key={index} className="icon" href={socialImg?.link} target="_blank">
+              <img src={socialImg.imgPath} style={{heigh:'30px',width:'30px'}} alt="social icon" />
+            </a>
+          ))}
+        </div> 
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ContactExperience, TitleHeader } from "../components";
 import contactus from "../../public/images/Contactus.jpg"
+import toast from "react-hot-toast";
 
 
 const Contact = () => {
@@ -20,7 +21,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true); 
 
     try {
       await emailjs.sendForm(
@@ -31,11 +32,13 @@ const Contact = () => {
       );
 
       // Reset form and stop loading
+      toast.success("Message Sent Successfully");
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      toast.success("Message Not Sent");
+      console.error("EmailJS Error:", error); 
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false); 
     }
   };
 
@@ -108,7 +111,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+            <div className="bg-[#cd7c2e] w-full h-148 hover:cursor-grab rounded-3xl overflow-hidden">
               <img src={contactus} alt="contact"/>
             </div>
           </div>

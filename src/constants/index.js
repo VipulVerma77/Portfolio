@@ -30,45 +30,45 @@ const words = [
 
 const counterItems = [
   { value: 1.5, suffix: "+", label: "Years of Experience" },
-  { value: 3, suffix: "+", label: "Completed Company Project" },
-  { value: 17, suffix: "+", label: "Completed Personal Projects" },
-  { value: 200, suffix: "+", label: "DSA Problem Solve" },
+  { value: 3, suffix: "+", label: "Company Projects" },
+  { value: 7, suffix: "+", label: "Personal Projects" },
+  { value: 200, suffix: "+", label: "DSA Challenges" },
 ];
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/3d_Javascript.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/mongoDb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/express.js.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/node.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/react.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  // {
+  //   imgPath: "/images/logos/company-logo-6.png",
+  // },
+  // {
+  //   imgPath: "/images/logos/company-logo-7.png",
+  // },
+  // {
+  //   imgPath: "/images/logos/company-logo-8.png",
+  // },
+  // {
+  //   imgPath: "/images/logos/company-logo-9.png",
+  // },
+  // {
+  //   imgPath: "/images/logos/company-logo-10.png",
+  // },
+  // {
+  //   imgPath: "/images/logos/company-logo-11.png",
+  // },
 ];
 
 const abilities = [
@@ -84,7 +84,7 @@ const abilities = [
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
+    title: "Projects Delivered on Time",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
@@ -96,7 +96,7 @@ const techStackImgs = [
   },
   {
     name: "JavaScript Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/images/logos/3d_Javascript.png",
   },
   {
     name: "Node.js Developer",
@@ -104,11 +104,11 @@ const techStackImgs = [
   },
   {
     name: "Express.js",
-    imgPath: "/images/logos/three.png",
+    imgPath: "/images/logos/express.js.png",
   },
   {
     name: "MongoDB Database",
-    imgPath: "/images/logos/git.svg",
+    imgPath: "/images/logos/mongoDb.png",
   },
 ];
 
@@ -223,22 +223,27 @@ const testimonials = [
 ];
 
 const socialImgs = [
-  {
-    name: "github",
-    imgPath: "/images/github.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
+  
+  // {
+  //   name: "fb",
+  //   imgPath: "/images/fb.png",
+  //   link:'https://github.com/VipulVerma77'
+  // },
+  // {
+  //   name: "x",
+  //   imgPath: "/images/x.png",
+  //   link:'https://github.com/VipulVerma77'
+  // },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link:'https://www.linkedin.com/in/vipulverma7'
   },
+  {
+    name: "github",
+    imgPath: "/images/github.png",
+    link:'https://github.com/VipulVerma77'
+  },  
 ];
 
 export {
