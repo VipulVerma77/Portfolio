@@ -8,7 +8,7 @@ const App = () => {
       <NavBar/>
       <Hero/>
       <AppShowcase/>
-      {/* <LogoShowcase/> */}
+      <LogoShowcase/>
       <FeatureCards/>
       <Experience/>
       <TechStack/>
