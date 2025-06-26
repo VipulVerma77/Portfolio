@@ -32,7 +32,7 @@ const counterItems = [
   { value: 1.5, suffix: "+", label: "Years of Experience" },
   { value: 3, suffix: "+", label: "Company Projects" },
   { value: 7, suffix: "+", label: "Personal Projects" },
-  { value: 200, suffix: "+", label: "DSA Challenges" },
+  { value: 100, suffix: "+", label: "DSA Challenges" },
 ];
 
 const logoIconsList = [
